@@ -10,7 +10,7 @@
 	<title>Home</title> 
 </head>
 <body>
-	<form action="/aaa" method="get">
+	<form action="/auth" method="post">
 	  <label for="fname">ID:</label>
 	  <input type="text" id="id" name="id"><br><br>
 	  <label for="lname">Password:</label>

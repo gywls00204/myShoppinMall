@@ -37,11 +37,12 @@ public class HomeController {
 	}
 	
 	@ResponseBody
-	@RequestMapping(value = "/aaa", method = RequestMethod.GET)
+	@RequestMapping(value = "/auth", method = RequestMethod.POST)
 	public String auth(Locale locale, Model model, @ModelAttribute User user) {
 		
-		System.out.println(user.getId());
-		System.out.println(user.getPassword());
+		if(user.getId().equals("hyojin")) {
+			return "home";
+		}
 		
 		return "login";
 	}
