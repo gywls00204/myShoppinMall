@@ -10,6 +10,12 @@
 	<title>Home</title> 
 </head>
 <body>
-	<a href="/login">로그인</a>
+	<form action="/aaa" method="get">
+	  <label for="fname">ID:</label>
+	  <input type="text" id="id" name="id"><br><br>
+	  <label for="lname">Password:</label>
+	  <input type="password" id="password" name="password"><br><br>
+	  <input type="submit" value="Submit">
+	</form>
 </body>
 </html>
